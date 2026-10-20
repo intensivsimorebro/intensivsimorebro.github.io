@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="sv" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intensivsimskola - Örebro | Zarif Sultani</title>
+    <!-- Tailwind CSS för modern och responsiv design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navigationsfält / Header -->
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md text-white border-b border-slate-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">🏊‍♂️</span>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight block leading-none">INTENSIVSIMSKOLA</span>
+                    <span class="text-xs text-cyan-400 font-semibold tracking-wider">ÖREBRO</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-300">
+                <a href="#start" class="hover:text-cyan-400 transition">Start</a>
+                <a href="#om-oss" class="hover:text-cyan-400 transition">Om oss</a>
+                <a href="#kurser" class="hover:text-cyan-400 transition">Kurser</a>
+                <a href="#bokning" class="hover:text-cyan-400 transition">Boka plats</a>
+                <a href="#produkter" class="hover:text-cyan-400 transition">Utrustning</a>
+                <a href="#kontakt" class="hover:text-cyan-400 transition">Kontakt</a>
+            </nav>
+            <a href="#bokning" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-5 py-2.5 rounded-full text-sm shadow-md transition transform active:scale-95">
+                Boka kurs
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero-sektion med din beskrivning -->
+    <section id="start" class="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white py-20 lg:py-28 px-4 overflow-hidden border-b border-slate-800">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="bg-cyan-500/20 text-cyan-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider border border-cyan-500/30 mb-6 inline-block">
+                Zarif Sultani • Kontakt & Bokning
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                Välkommen till Intensivsimskola!
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl font-light text-slate-300 leading-relaxed max-w-3xl mx-auto mb-10">
+                Här brinner vi för dig som vill lära dig att simma på ett bra, snabbt och säkert sätt. Oavsett om du vill lära dig simma själv, eller om du vill att dina barn ska lära sig simma på ett tryggt och bra sätt – då är det oss du ska vända dig till. Hos oss kämpar vi för dig som vill lära dig simma på den snabba vägen!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#bokning" class="bg-cyan-400 text-slate-950 hover:bg-cyan-300 font-extrabold px-8 py-4 rounded-full shadow-lg text-lg transition transform hover:-translate-y-0.5">
+                    Se kurser & Boka
+                </a>
+                <a href="tel:+46730929508" class="bg-slate-800/80 hover:bg-slate-800 text-white font-semibold px-8 py-4 rounded-full border border-slate-700 text-lg transition flex items-center justify-center gap-2">
+                    📞 Ring Zarif: +46 73 092 95 08
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Värdeord från visitenkortet -->
+    <section id="om-oss" class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-2 uppercase tracking-wide text-slate-900">Trygghet</h3>
+                    <p class="text-slate-600 text-sm">Vi skapar en säker och lugn miljö i vattnet där alla elever känner sig sedda och trygga.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-2 uppercase tracking-wide text-slate-900">Utveckling</h3>
+                    <p class="text-slate-600 text-sm">Genom strukturerade intensivlektioner ser vi till att simteknik och vattenvana utvecklas snabbt.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+                    <div class="text-4xl mb-4">🏆</div>
+                    <h3 class="text-xl font-bold mb-2 uppercase tracking-wide text-slate-900">Resultat</h3>
+                    <p class="text-slate-600 text-sm">Målet är att du eller ditt barn ska bli en simkunnig och trygg simmare på så kort tid som möjligt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kurskatalog -->
+    <section id="kurser" class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Våra Intensivkurser</h2>
+                <p class="text-slate-600 mt-2">Specialanpassad simundervisning i Örebro</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Kurs 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Barn & Ungdom</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2">Intensivsimskola Nybörjare</h3>
+                        <p class="text-slate-600 text-sm mb-4">För barn som vill lära sig grunderna i simning, vattenvana och bröstsim på ett tryggt och roligt sätt.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                            <li>✔️ Grundläggande vattenvana</li>
+                            <li>✔️ Max 6 elever per grupp</li>
+                            <li>✔️ Intensivträning i Örebro</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-blue-600 mb-4">1 290 kr</div>
+                        <a href="#bokning" class="block text-center bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 rounded-xl text-sm transition">Välj kurs</a>
+                    </div>
+                </div>
+
+                <!-- Kurs 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-cyan-400 ring-2 ring-cyan-500/20 flex flex-col justify-between hover:shadow-md transition relative">
+                    <span class="absolute -top-3 right-6 bg-cyan-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full">Populärast</span>
+                    <div>
+                        <span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full uppercase">Fortsättning</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2">Intensivsimskola Fortsättning</h3>
+                        <p class="text-slate-600 text-sm mb-4">För dig som vill förbättra simtekniken, öka uthålligheten och få mer självförtroende på djupt vatten.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                            <li>✔️ Ryggsim & Bröstsim</li>
+                            <li>✔️ Dykning & Flytövningar</li>
+                            <li>✔️ Snabb resultatgaranti</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-blue-600 mb-4">1 390 kr</div>
+                        <a href="#bokning" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-xl text-sm transition">Välj kurs</a>
+                    </div>
+                </div>
+
+                <!-- Kurs 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Vuxna</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2">Vuxensim & Crawl</h3>
+                        <p class="text-slate-600 text-sm mb-4">För vuxna som vill övervinna vattenskräck, lära sig simma från grunden eller utveckla sin crawlteknik.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                            <li>✔️ Individuell anpassning</li>
+                            <li>✔️ Lugn och trygg miljö</li>
+                            <li>✔️ Flexibla tider</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-blue-600 mb-4">1 590 kr</div>
+                        <a href="#bokning" class="block text-center bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 rounded-xl text-sm transition">Välj kurs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bokningsformulär -->
+    <section id="bokning" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-slate-900">Boka din plats</h2>
+                <p class="text-slate-600 mt-2">Kontakta Zarif Sultani direkt för bokning och frågor</p>
+            </div>
+
+            <form class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6" onsubmit="alert('Tack för din bokning! Zarif återkommer till dig inom kort.'); return false;">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Ditt Namn</label>
+                        <input type="text" required placeholder="Förnamn Efternamn" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">E-postadress</label>
+                        <input type="email" required placeholder="din.epost@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Telefonnummer</label>
+                        <input type="tel" required placeholder="073-092 95 08" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Välj kurs</label>
+                        <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                            <option>Intensivsimskola Nybörjare</option>
+                            <option>Intensivsimskola Fortsättning</option>
+                            <option>Vuxensim & Crawl</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Meddelande / Önskemål</label>
+                    <textarea rows="3" placeholder="Ange vem kursen gäller för samt eventuella särskilda önskemål..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-md transition">
+                    Skicka bokningsförfrågan
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Utrustning & Webbshop -->
+    <section id="produkter" class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Utrustning & Tillbehör</h2>
+                <p class="text-slate-600 mt-2">Rekommenderade produkter för träning och lektioner</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Produkt 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="bg-blue-50 h-40 rounded-xl mb-4 flex items-center justify-center text-4xl">🏓</div>
+                        <h3 class="text-lg font-bold mb-1">Ergonomiska Simglasögon</h3>
+                        <p class="text-slate-500 text-xs mb-4">Imfria med mjuk silikonpassform för perfekt komfort i poolen.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                        <span class="text-lg font-bold text-blue-600">199 kr</span>
+                        <button onclick="alert('Inköpsförfrågan skickad!')" class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold transition">Köp</button>
+                    </div>
+                </div>
+
+                <!-- Produkt 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="bg-blue-50 h-40 rounded-xl mb-4 flex items-center justify-center text-4xl">🛟</div>
+                        <h3 class="text-lg font-bold mb-1">Flythjälp & Ryggplatta</h3>
+                        <p class="text-slate-500 text-xs mb-4">Ger extra trygghet och korrekt vattenläge under de första lektionerna.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                        <span class="text-lg font-bold text-blue-600">149 kr</span>
+                        <button onclick="alert('Inköpsförfrågan skickad!')" class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold transition">Köp</button>
+                    </div>
+                </div>
+
+                <!-- Produkt 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="bg-blue-50 h-40 rounded-xl mb-4 flex items-center justify-center text-4xl">🥋</div>
+                        <h3 class="text-lg font-bold mb-1">Snabbtorkande Microhandduk</h3>
+                        <p class="text-slate-500 text-xs mb-4">Smidig och lätt handduk som tar minimalt med plats i simväskan.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                        <span class="text-lg font-bold text-blue-600">229 kr</span>
+                        <button onclick="alert('Inköpsförfrågan skickad!')" class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold transition">Köp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Kontakt från Visitenkortet -->
+    <footer id="kontakt" class="bg-slate-950 text-white py-16 px-4 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-extrabold mb-1">Zarif Sultani</h3>
+            <p class="text-cyan-400 font-semibold text-sm tracking-widest uppercase mb-8">Kontakt & Bokning</p>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm text-slate-300 mb-10">
+                <a href="tel:+46730929508" class="bg-slate-900 p-4 rounded-xl border border-slate-800 hover:border-cyan-500 transition block">
+                    <div class="text-2xl mb-1">📞</div>
+                    <div class="text-xs text-slate-500 uppercase">Telefon</div>
+                    <div class="font-bold text-white mt-1">+46 73 092 95 08</div>
+                </a>
+
+                <a href="https://t.me/intensivsimskola" target="_blank" class="bg-slate-900 p-4 rounded-xl border border-slate-800 hover:border-cyan-500 transition block">
+                    <div class="text-2xl mb-1">✈️</div>
+                    <div class="text-xs text-slate-500 uppercase">Telegram</div>
+                    <div class="font-bold text-white mt-1">@intensivsimskola</div>
+                </a>
+
+                <a href="https://www.tiktok.com/@intensivsimskola" target="_blank" class="bg-slate-900 p-4 rounded-xl border border-slate-800 hover:border-cyan-500 transition block">
+                    <div class="text-2xl mb-1">🎵</div>
+                    <div class="text-xs text-slate-500 uppercase">TikTok</div>
+                    <div class="font-bold text-white mt-1">@intensivsimskola</div>
+                </a>
+
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 block">
+                    <div class="text-2xl mb-1">📍</div>
+                    <div class="text-xs text-slate-500 uppercase">Plats</div>
+                    <div class="font-bold text-white mt-1">Örebro</div>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-6 text-xs text-slate-400 font-semibold uppercase tracking-wider border-t border-slate-900 pt-8">
+                <span>Trygghet</span> • <span>Utveckling</span> • <span>Resultat</span>
+            </div>
+
+            <div class="mt-8 text-xs text-slate-600">
+                &copy; 2026 Intensivsimskola Örebro. Alla rättigheter förbehållna.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
