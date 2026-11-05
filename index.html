@@ -96,7 +96,7 @@
                         </p>
                     </div>
 
-                    <!-- Ny tillagd informationsruta för teknik, uthållighet och simmoment -->
+                    <!-- Informationsruta för teknik och moments -->
                     <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 mb-8 backdrop-blur-sm">
                         <p class="text-slate-200 leading-relaxed mb-4">
                             För dig som vill förbättra simtekniken, öka uthålligheten och få mer självförtroende på djupt vatten[cite: 5, 8].
@@ -144,7 +144,7 @@
         </div>
     </section>
 
-    <!-- Bokningsformulär -->
+    <!-- Bokningsformulär kopplat till Formspree -->
     <section id="bokning" class="py-16 bg-white">
         <div class="max-w-3xl mx-auto px-4">
             <div class="text-center mb-8">
@@ -152,36 +152,36 @@
                 <p class="text-slate-600 mt-2">Kontakta Zarif Sultani direkt för bokning och frågor</p>
             </div>
 
-            <form class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6" onsubmit="alert('Tack för din bokning! Zarif återkommer till dig inom kort.'); return false;">
+            <form action="https://formspree.io/f/maeekddv" method="POST" class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
                 <div class="grid sm:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Ditt Namn</label>
-                        <input type="text" required placeholder="Förnamn Efternamn" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        <input type="text" name="namn" required placeholder="Förnamn Efternamn" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-slate-700 uppercase mb-2">E-postadress</label>
-                        <input type="email" required placeholder="din.epost@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        <input type="email" name="email" required placeholder="din.epost@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                     </div>
                 </div>
 
                 <div class="grid sm:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Telefonnummer</label>
-                        <input type="tel" required placeholder="073-092 95 08" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        <input type="tel" name="telefon" required placeholder="073-092 95 08" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Välj alternativ</label>
-                        <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                            <option>Privat Simlektion - Barn (4–12 år) - 300 kr</option>
-                            <option>Privat Simlektion - Ungdom (12–18 år) - 350 kr</option>
-                            <option>Privat Simlektion - Vuxen - 400 kr</option>
+                        <select name="lektionstyp" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                            <option value="Barn (4-12 år) - 300 kr">Privat Simlektion - Barn (4–12 år) - 300 kr</option>
+                            <option value="Ungdom (12-18 år) - 350 kr">Privat Simlektion - Ungdom (12–18 år) - 350 kr</option>
+                            <option value="Vuxen - 400 kr">Privat Simlektion - Vuxen - 400 kr</option>
                         </select>
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Meddelande / Önskemål</label>
-                    <textarea rows="3" placeholder="Ange vem lektionen gäller för samt eventuella särskilda önskemål..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                    <textarea name="meddelande" rows="3" placeholder="Ange vem lektionen gäller för samt eventuella särskilda önskemål..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
                 </div>
 
                 <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-md transition">
